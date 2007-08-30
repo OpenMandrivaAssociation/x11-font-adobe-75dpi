@@ -1,6 +1,6 @@
 Name: x11-font-adobe-75dpi
 Version: 1.0.0
-Release: %mkrel 4
+Release: %mkrel 5
 Summary: Xorg X11 font adobe-75dpi
 Group: Development/X11
 URL: http://xorg.freedesktop.org
@@ -8,13 +8,13 @@ Source: http://xorg.freedesktop.org/releases/individual/font/font-adobe-75dpi-%{
 License: CHECK
 BuildRoot: %{_tmppath}/%{name}-root
 BuildArch: noarch
-
 BuildRequires: x11-font-util >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
-
 Conflicts: xorg-x11-75dpi-fonts <= 6.9.0
-PreReq: mkfontdir
-PreReq: mkfontscale
+Requires(post): mkfontdir
+Requires(postun): mkfontdir
+Requires(post): mkfontscale
+Requires(postun): mkfontscale
 
 %description
 Xorg X11 font adobe-75dpi
@@ -47,10 +47,9 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
+%doc COPYING
 %_datadir/fonts/75dpi/cour*
 %_datadir/fonts/75dpi/helv*
 %_datadir/fonts/75dpi/ncen*
 %_datadir/fonts/75dpi/symb*
 %_datadir/fonts/75dpi/tim*
-
-
