@@ -5,7 +5,7 @@ Summary: Xorg X11 font adobe-75dpi
 Group: Development/X11
 URL: http://xorg.freedesktop.org
 Source: http://xorg.freedesktop.org/releases/individual/font/font-adobe-75dpi-%{version}.tar.bz2
-License: CHECK
+License: MIT-like
 BuildRoot: %{_tmppath}/%{name}-root
 BuildArch: noarch
 BuildRequires: x11-font-util >= 1.0.0
