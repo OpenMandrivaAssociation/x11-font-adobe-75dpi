@@ -1,6 +1,6 @@
 Name: x11-font-adobe-75dpi
 Version: 1.0.3
-Release: %mkrel 5
+Release: 6
 Summary: Xorg X11 font adobe-75dpi
 Group: Development/X11
 URL: http://xorg.freedesktop.org
